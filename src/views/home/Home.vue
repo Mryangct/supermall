@@ -10,7 +10,10 @@
 
 <script>
 import NavBar from 'components/common/navbar/NavBar'
+<<<<<<< HEAD
 import {getHomeData} from "network/home"
+=======
+>>>>>>> 4d9286e5e135d8801d9d67b1fafafccb59ca4a52
 export default {
   name: "Home",
   components: {
