@@ -10,10 +10,21 @@
 
 <script>
 import NavBar from 'components/common/navbar/NavBar'
+import {getHomeData} from "network/home"
 export default {
   name: "Home",
   components: {
     NavBar
+  },
+  data(){
+    return {
+      banners : []
+    }
+  },
+  created(){
+    getHomeData().then(res =>{
+     this.banners=res.data.banner.list
+    })
   }
 
 };
