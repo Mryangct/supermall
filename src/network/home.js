@@ -5,3 +5,13 @@ export function getHomeData(){
     url:'/gethomedata'
   })
 }
+
+export function getHomeGoods(type,page){
+  return request({
+    url:'/findtablist',
+    params:{
+      type,
+      page
+    }
+  })
+}
